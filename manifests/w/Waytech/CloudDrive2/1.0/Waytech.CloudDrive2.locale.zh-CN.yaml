@@ -28,12 +28,11 @@ Tags:
 - 文件
 - 服务器
 ReleaseNotes: |-
-  1. 新增支持添加光鸭云盘，目前仅支持只读模式，支持浏览目录和读取文件，无法创建文件夹、删除文件、重命名、移动、上传文件等操作，支持通过光鸭云盘 App 扫码登录，后续版本会更新完整功能的光鸭云盘
-  2. S3 未填写存储桶名时浏览账户内全部存储桶，自动改用 ListBuckets（GET /），将每个存储桶显示为顶层文件夹；同时支持路径模式与虚拟主机模式、V2/V4 签名。存储桶列表根目录为只读（不支持创建 / 删除存储桶）
-  3. 修复连接到某些不支持 http range 的 webdav 服务器读取文件可能失败的问题
-  4. Web：新增多服务器支持，可以连接到其它 CloudDrive2 的 grpc 服务，方便用在桌面浏览器远程管理移动设备的 CloudDrive
-  5. 其它 bug 修复和界面优化
-ReleaseNotesUrl: https://github.com/cloud-fs/cloud-fs.github.io/releases/tag/v1.0.11
+  1. 修复备份的文件过滤规则在白名单模式下部分规则不生效的问题(#490、#163)
+  2. 修复文件夹被删除后又在第三方以同名重新创建（例如在另一台设备上操作，或清空回收站之后），之前对这个文件夹的浏览和读取会一直失败的问题
+  3. 修复 Windows 挂载盘， 当挂载盘根目录是可写目录时，资源管理器中删除文件会提示回收站已损坏的问题，在根目录可写的本地挂载盘上支持 Windows 资源管理器的删除到回收站和从回收站恢复
+  4. 修复 Windows 挂载盘在网页端或者其他设备上进行修改时，无法向操作系统发出文件变更通知的问题(#554)
+ReleaseNotesUrl: https://github.com/cloud-fs/cloud-fs.github.io/releases/tag/v1.0.18
 PurchaseUrl: https://www.clouddrive2.com/pricing.html
 ManifestType: locale
 ManifestVersion: 1.12.0

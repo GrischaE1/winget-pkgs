@@ -11,12 +11,13 @@ Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.EdgeWebView2Runtime
 ProductCode: '{AD26DBF3-29CE-44E6-B5B7-B0065171A80C}_is1'
+ReleaseDate: 2026-09-16
 Installers:
 - Architecture: x86
   InstallerUrl: https://file.netpas.net/ftp/NetpasTramperBusiness.exe
-  InstallerSha256: 01DE6113A9F98DFF5A52EF977179AD9BFA0E8A3E896FDE9A0AB12F2A1A723C28
+  InstallerSha256: EBD6CD698EFB296A774391B3BC17591338BDF03E9C22422B89735E3ECA703C12
 - Architecture: x64
   InstallerUrl: https://file.netpas.net/ftp/NetpasTramperBusiness.exe
-  InstallerSha256: 01DE6113A9F98DFF5A52EF977179AD9BFA0E8A3E896FDE9A0AB12F2A1A723C28
+  InstallerSha256: EBD6CD698EFB296A774391B3BC17591338BDF03E9C22422B89735E3ECA703C12
 ManifestType: installer
 ManifestVersion: 1.12.0
