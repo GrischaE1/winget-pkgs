@@ -5,10 +5,11 @@ PackageIdentifier: Okta.OktaVerify
 PackageVersion: 7.0.1.0
 InstallerType: burn
 Scope: machine
+InstallerSwitches:
+  Silent: /s 
 InstallModes:
 - interactive
 - silent
-- silentWithProgress
 UpgradeBehavior: install
 AppsAndFeaturesEntries:
 - ProductCode: '{9A601EEB-7714-4E42-AA3E-A046866CF2F5}'
