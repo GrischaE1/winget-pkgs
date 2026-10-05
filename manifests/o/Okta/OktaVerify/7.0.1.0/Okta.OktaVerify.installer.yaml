@@ -13,7 +13,6 @@ UpgradeBehavior: install
 AppsAndFeaturesEntries:
 - ProductCode: '{9A601EEB-7714-4E42-AA3E-A046866CF2F5}'
   DisplayName: OktaVerify-x64-7.0.1.0
-  DisplayVersion: 7.0.1.0
   Publisher: Okta, Inc.
 Installers:
 - Architecture: x64
